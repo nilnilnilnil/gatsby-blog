@@ -23,7 +23,7 @@ const MyForm = () => {
         setServerState({ submitting: true });
         axios({
             method: "post",
-            url: "https://formspree.io/f/xqkwlddv",
+            url: "https://getform.io/f/{unique-endpoint-generated-on-step-1}",
             data: new FormData(form)
         })
             .then(r => {
@@ -49,6 +49,7 @@ const MyForm = () => {
             </div>
 
         </Layout>
+
 );
 };
 
